@@ -1,24 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vM3-q2-kZQ">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--List Table View Controller-->
+        <scene sceneID="qDs-EW-Ifn">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <tableViewController id="vM3-q2-kZQ" customClass="ListTableViewController" customModule="Accelrometron" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ro4-EQ-gId">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="parallexCell" rowHeight="120" id="xyQ-v5-Uu3" customClass="ParallexCellTableViewCell" customModule="Accelrometron" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xyQ-v5-Uu3" id="ymN-uw-qua">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dF4-dn-6Rv">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cameras" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8K-AQ-gMx">
+                                            <rect key="frame" x="16" y="11" width="288" height="98"/>
+                                            <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="42"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <size key="shadowOffset" width="1" height="1"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="dF4-dn-6Rv" firstAttribute="leading" secondItem="ymN-uw-qua" secondAttribute="leading" id="J9C-CZ-lO0"/>
+                                        <constraint firstItem="k8K-AQ-gMx" firstAttribute="top" secondItem="ymN-uw-qua" secondAttribute="topMargin" id="LA4-5X-eh2"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="k8K-AQ-gMx" secondAttribute="trailing" id="Mch-59-Yd8"/>
+                                        <constraint firstAttribute="trailing" secondItem="dF4-dn-6Rv" secondAttribute="trailing" id="NQc-Ag-lV5"/>
+                                        <constraint firstItem="dF4-dn-6Rv" firstAttribute="top" secondItem="ymN-uw-qua" secondAttribute="top" id="QZw-hx-ewg"/>
+                                        <constraint firstItem="k8K-AQ-gMx" firstAttribute="leading" secondItem="ymN-uw-qua" secondAttribute="leadingMargin" id="RJQ-e1-Lz1"/>
+                                        <constraint firstAttribute="bottom" secondItem="dF4-dn-6Rv" secondAttribute="bottom" id="p7m-Mw-cRu"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="k8K-AQ-gMx" secondAttribute="bottom" id="ydH-jj-zCg"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ivItem" destination="dF4-dn-6Rv" id="zM1-B7-Qm5"/>
+                                    <outlet property="lblDescription" destination="k8K-AQ-gMx" id="1B4-F2-NiK"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vM3-q2-kZQ" id="qiK-jn-ofN"/>
+                            <outlet property="delegate" destination="vM3-q2-kZQ" id="YBH-Dw-Svh"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="thx-6z-fz3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-455.07246376811599" y="-126.5625"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="6" width="1080" height="721"/>
+    </resources>
 </document>

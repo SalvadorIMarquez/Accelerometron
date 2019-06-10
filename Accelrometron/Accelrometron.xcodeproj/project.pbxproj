@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F614DC7122AB193300DBFE2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F614DC7022AB193300DBFE2B /* AppDelegate.swift */; };
-		F614DC7322AB193300DBFE2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F614DC7222AB193300DBFE2B /* ViewController.swift */; };
+		F614DC7322AB193300DBFE2B /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F614DC7222AB193300DBFE2B /* ListTableViewController.swift */; };
 		F614DC7622AB193300DBFE2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F614DC7422AB193300DBFE2B /* Main.storyboard */; };
 		F614DC7822AB193A00DBFE2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F614DC7722AB193A00DBFE2B /* Assets.xcassets */; };
 		F614DC7B22AB193A00DBFE2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F614DC7922AB193A00DBFE2B /* LaunchScreen.storyboard */; };
 		F614DC8622AB193A00DBFE2B /* AccelrometronTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F614DC8522AB193A00DBFE2B /* AccelrometronTests.swift */; };
 		F614DC9122AB193A00DBFE2B /* AccelrometronUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F614DC9022AB193A00DBFE2B /* AccelrometronUITests.swift */; };
+		F614DCA122AB1F0500DBFE2B /* ParallexCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F614DCA022AB1F0500DBFE2B /* ParallexCellTableViewCell.swift */; };
+		F614DCA322AB22DC00DBFE2B /* imagesNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = F614DCA222AB22DC00DBFE2B /* imagesNames.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		F614DC6D22AB193300DBFE2B /* Accelrometron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accelrometron.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F614DC7022AB193300DBFE2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F614DC7222AB193300DBFE2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F614DC7222AB193300DBFE2B /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		F614DC7522AB193300DBFE2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F614DC7722AB193A00DBFE2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F614DC7A22AB193A00DBFE2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		F614DC8C22AB193A00DBFE2B /* AccelrometronUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccelrometronUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F614DC9022AB193A00DBFE2B /* AccelrometronUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelrometronUITests.swift; sourceTree = "<group>"; };
 		F614DC9222AB193A00DBFE2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F614DCA022AB1F0500DBFE2B /* ParallexCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallexCellTableViewCell.swift; sourceTree = "<group>"; };
+		F614DCA222AB22DC00DBFE2B /* imagesNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagesNames.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,14 @@
 		F614DC6F22AB193300DBFE2B /* Accelrometron */ = {
 			isa = PBXGroup;
 			children = (
+				F614DC9F22AB1EDA00DBFE2B /* View */,
+				F614DC9E22AB1EC000DBFE2B /* Controller */,
 				F614DC7022AB193300DBFE2B /* AppDelegate.swift */,
-				F614DC7222AB193300DBFE2B /* ViewController.swift */,
 				F614DC7422AB193300DBFE2B /* Main.storyboard */,
 				F614DC7722AB193A00DBFE2B /* Assets.xcassets */,
 				F614DC7922AB193A00DBFE2B /* LaunchScreen.storyboard */,
 				F614DC7C22AB193A00DBFE2B /* Info.plist */,
+				F614DCA222AB22DC00DBFE2B /* imagesNames.swift */,
 			);
 			path = Accelrometron;
 			sourceTree = "<group>";
@@ -123,6 +129,22 @@
 				F614DC9222AB193A00DBFE2B /* Info.plist */,
 			);
 			path = AccelrometronUITests;
+			sourceTree = "<group>";
+		};
+		F614DC9E22AB1EC000DBFE2B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F614DC7222AB193300DBFE2B /* ListTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F614DC9F22AB1EDA00DBFE2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F614DCA022AB1F0500DBFE2B /* ParallexCellTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F614DC7322AB193300DBFE2B /* ViewController.swift in Sources */,
+				F614DC7322AB193300DBFE2B /* ListTableViewController.swift in Sources */,
 				F614DC7122AB193300DBFE2B /* AppDelegate.swift in Sources */,
+				F614DCA322AB22DC00DBFE2B /* imagesNames.swift in Sources */,
+				F614DCA122AB1F0500DBFE2B /* ParallexCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
